@@ -9,14 +9,17 @@ class SearchBar extends React.Component {
 
     onFormSubmit = (event) => {
         event.preventDefault();
-        // TODO: Make sure to call callback from parent component
+
+        // Callback from parent component
+        this.props.onTermSubmit(this.state.term);
+
     };
 
     render(){
         return (
             
             <div className="search-bar ui segment">
-                <form className="ui form" onSubmit={this.onFormSubmit}>
+                <form onSubmit={this.onFormSubmit} className="ui form" >
                     <div className="feild">
                         <label>Search Bar:</label>
                         <input 
