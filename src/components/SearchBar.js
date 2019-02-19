@@ -21,7 +21,7 @@ class SearchBar extends React.Component {
             <div className="search-bar ui segment">
                 <form onSubmit={this.onFormSubmit} className="ui form" >
                     <div className="feild">
-                        <label>Youtube 2050:</label>
+                        <label>Zentube:</label>
                         <input 
                             type="text" 
                             value={this.state.term}
